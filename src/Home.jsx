@@ -13,10 +13,10 @@ import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import CountUp from "react-countup";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
-import CISCMCourse from "./Images/CISCMCourse.jpg";
+import CISCMCourse from "./Images/CISCMCourse.jpeg";
 import KeyTopics from "./Images/KeyTopics.jpg";
-import CISCPCourse from "./Images/CISCPCourse.jpg";
-import CareerOppurtunities from "./Images/CareerOppurtunities.jpg";
+import CISCPCourse from "./Images/CISCPCourse.jpeg";
+import CareerOppurtunities from "./Images/CareerOppurtunities.jpeg";
 import "./App.css";
 import ISO from "./Images/ISOCertified.png";
 import KHDA from "./Images/KHDA.png";
@@ -1129,7 +1129,7 @@ export default function Home({ handleModalOpen }) {
 
         <div className="container-fluid  border border-white">
           <div
-            className={`row d-flex align-items-center justify-content-start mt-3 mt-lg-3 aboutdivwidth slide-in-left ${
+            className={`row border border-white d-flex align-items-center justify-content-center mt-3 mt-lg-3 aboutdivwidth slide-in-left ${
               hasViewedSlide.fourthElement ? "animate-enquire" : ""
             }`}
             ref={myRef4}
@@ -1175,11 +1175,11 @@ export default function Home({ handleModalOpen }) {
               </div>
             </div>
 
-            <div className="col-12 col-lg-5 col-xl-4 col-xxl-4 mt-3 order-1 order-lg-1 justify-content-start">
+            <div className="col-12 col-lg-6 col-xl-4 col-xxl-4 mt-3 order-1 order-lg-1 border border-white text-center">
               <img
                 src={CISCP}
                 alt="CISCP Image"
-                className="CISCPImagewidth"
+                className="CISCPImagewidth "
                 style={{ borderRadius: "3px 30px 3px 30px" }}
               />
             </div>
@@ -1196,15 +1196,15 @@ export default function Home({ handleModalOpen }) {
           </div>
         </div>
 
-        <div className="container-fluid  border border-white">
+        <div className="container-fluid   border border-white">
           <div
-            className={`row  d-flex align-items-center justify-content-start mt-5 aboutdivwidth slide-in-left ${
+            className={`row  border border-white d-flex align-items-center justify-content-center mt-5 mt-xxl-4 aboutdivwidth slide-in-left ${
               hasViewedSlide.fifthElement ? "animate-slide-in" : ""
             }`}
             ref={myRef5}
           >
             {/* Content Section */}
-            <div className="col-12 col-lg-6 order-2 order-lg-1 mt-3 ">
+            <div className="col-12 col-lg-6 order-2 order-lg-1 mt-3 border border-white">
               <h1
                 className="text-start Aboutsubheading"
                 style={{ color: "#0971CE" }}
@@ -1242,11 +1242,11 @@ export default function Home({ handleModalOpen }) {
               </div>
             </div>
             {/* Image Section */}
-            <div className="col-12 col-lg-4 mt-2  order-1 order-lg-3 text-lg-end">
+            <div className="col-12 col-lg-4 col-xl-4 col-xxl-4  mt-2  order-1 order-lg-3 border border-white">
               <img
                 src={CISCM}
                 alt="CISCM Image"
-                className="CISCMImagewidth text-lg-end"
+                className="CISCMImagewidth "
                 style={{ borderRadius: "3px 30px 3px 30px", width: "300px" }}
               />
             </div>
@@ -1271,21 +1271,21 @@ export default function Home({ handleModalOpen }) {
 
         <div className="container-fluid bg-light border border-light">
           <div
-            className={`row d-flex align-items-center justify-content-start mt-3 mt-lg-3 aboutdivwidth slide-in-left ${
+            className={`row d-flex align-items-center justify-content-center mt-3 mt-lg-3 aboutdivwidth slide-in-left ${
               hasViewedSlide.sixthElement ? "animate-enquire" : ""
             }`}
             ref={myRef6}
           >
             {/* Content Section */}
-            <div className="col-12 col-lg-6 order-2 order-lg-2">
+            <div className="col-12 col-lg-6 order-2 order-lg-2 ">
               <h2
-                className="text-start ms-lg-4 mt-2 Aboutsubheading"
+                className="text-start  mt-3 Aboutsubheading ms-lg-4"
                 style={{ color: "#011689" }}
               >
                 CISCP
               </h2>
               <ul style={{ listStyleType: "none", paddingLeft: 0 }}>
-                <li className="ms-lg-4 d-flex align-items-start mt-1">
+                <li className=" d-flex align-items-start mt-1 ms-lg-4">
                   <FontAwesomeIcon
                     icon={faCircleCheck}
                     className="me-2 flex-shrink-0 mt-1 ms-1"
@@ -1379,17 +1379,17 @@ export default function Home({ handleModalOpen }) {
             </div>
 
             {/* Image Section */}
-            <div className="col-12 col-lg-6 col-xl-4 col-xxl-6 mt-3 order-1 order-lg-1 justify-content-start">
+            <div className="col-12 col-lg-6 col-xl-4 col-xxl-6 mt-3 order-1 order-lg-1 justify-content-center ">
               <img
                 src={CISCPCourse}
                 alt="CISCP Course Image"
-                className="CISCPCourseImagewidth"
+                className="img-fluid"
                 style={{ borderRadius: "3px 30px 3px 30px" }}
               />
             </div>
 
             {/* Button Section for Small and Medium Devices */}
-            <div className="col-11 mt-2 ms-3 order-3 d-block d-lg-none">
+            <div className="col-12 mt-2 ms-3 order-3 d-block d-lg-none">
               <button
                 className="btn btn-lg EnquireButton Enquirebuttonwidth ms-lg-4"
                 onClick={(e) => handleEnquireClick(e, "enquire-now")}
@@ -1402,7 +1402,7 @@ export default function Home({ handleModalOpen }) {
 
         <div className="container-fluid bg-light border border-light">
           <div
-            className={`row bg-light d-flex align-items-center justify-content-start mt-5 aboutdivwidth slide-in-left ${
+            className={`row bg-light d-flex align-items-center justify-content-center mt-5 aboutdivwidth slide-in-left ${
               hasViewedSlide.seventhElement ? "animate-slide-in" : ""
             }`}
             ref={myRef7}
@@ -1492,7 +1492,7 @@ export default function Home({ handleModalOpen }) {
               </ul>
               <div className="col-12 col-lg-6 d-flex justify-content-start mt-3 order-3 order-lg-2 d-none d-lg-block ms-2">
                 <button
-                  className="btn btn-lg Demobutton Demoenquirebuttonwidth  mt-1"
+                  className="btn btn-lg Demobutton Demoenquirebuttonwidth  mt-1 "
                   onClick={(e) => handleEnquireClick(e, "enquire-now")}
                 >
                   Enquire Now
@@ -1500,15 +1500,15 @@ export default function Home({ handleModalOpen }) {
               </div>
             </div>
             {/* Image Section */}
-            <div className="col-12 col-lg-6 col-xxl-6 mt-2  order-1 order-lg-3 text-lg-end text-xxl-start">
+            <div className="col-12 col-lg-6 col-xxl-6 mt-3 order-1 order-lg-3  ">
               <img
                 src={CISCMCourse}
                 alt="CISCM Course Image"
-                className="CISCMCourseImagewidth text-lg-end text-xxl-start ms-lg-4 ms-xxl-4"
+                className="img-fluid"
                 style={{ borderRadius: "3px 30px 3px 30px" }}
               />
             </div>
-            <div className="col-11 mt-2 order-3 d-block d-lg-none ms-3">
+            <div className="col-12 mt-2 order-3 d-block d-lg-none ms-3">
               <button
                 className="btn btn-lg Demobutton Demoenquirebuttonwidth  ms-lg-4"
                 onClick={(e) => handleEnquireClick(e, "enquire-now")}
@@ -1521,12 +1521,12 @@ export default function Home({ handleModalOpen }) {
 
         <div className="container-fluid bg-light border border-light  ">
           <div
-            className={`row  bg-light d-flex align-items-center justify-content-start mt-5 aboutdivwidth slide-in-left  ${
+            className={`row  bg-light d-flex align-items-center justify-content-center mt-5 aboutdivwidth slide-in-left  ${
               hasViewedSlide.eigthElement ? "animate-enquire" : ""
             }`}
             ref={myRef8}
           >
-            <div className="col-12 col-lg-6 order-2 order-lg-2">
+            <div className="col-12 col-lg-6 order-2 order-lg-2 ">
               <h2
                 className="text-start ms-lg-4 mt-3 Aboutsubheading"
                 style={{ color: "#011689" }}
@@ -1613,19 +1613,19 @@ export default function Home({ handleModalOpen }) {
             </div>
 
             {/* Image Section */}
-            <div className="col-12 col-lg-6 col-xl-6 col-xxl-6 mt-3 mt-lg-4 order-1 order-lg-1 justify-content-start">
+            <div className="col-12 col-lg-6 col-xl-6 col-xxl-6 mt-3 mt-lg-4 order-1 order-lg-1 justify-content-start ">
               <img
                 src={CareerOppurtunities}
                 alt="Career Oppurtunities Image"
-                className="CareerOppurtunitiesImagewidth"
+                className="img-fluid"
                 style={{ borderRadius: "3px 30px 3px 30px" }}
               />
             </div>
 
             {/* Button Section for Small and Medium Devices */}
-            <div className="col-11 mt-2 order-3 d-block d-lg-none ms-3">
+            <div className="col-12 mt-2 order-3 d-block d-lg-none ms-3 ">
               <button
-                className="btn btn-lg EnquireButton Enquirebuttonwidth ms-lg-4"
+                className="btn btn-lg EnquireButton Enquirebuttonwidth "
                 onClick={(e) => handleEnquireClick(e, "enquire-now")}
               >
                 Enquire Now
@@ -1635,12 +1635,12 @@ export default function Home({ handleModalOpen }) {
         </div>
         <div className="container-fluid bg-light border border-light pb-5">
           <div
-            className={`row bg-light d-flex align-items-center justify-content-start mt-5 aboutdivwidth  slide-in-left ${
+            className={`row bg-light d-flex align-items-center justify-content-center mt-5 aboutdivwidth  slide-in-left ${
               hasViewedSlide.ninethElement ? "animate-slide-in" : ""
             }`}
             ref={myRef9}
           >
-            <div className="col-12 col-lg-6 order-2 order-lg-1">
+            <div className="col-12 col-lg-6  order-2 order-lg-1">
               <h1
                 className="text-start Aboutsubheading mt-3"
                 style={{ color: "#0971CE" }}
@@ -1706,7 +1706,7 @@ export default function Home({ handleModalOpen }) {
                   Emerging Technologies in Supply Chain
                 </li>
               </ul>
-              <div className="col-12 col-lg-6 d-flex justify-content-start mt-3 ms-2 order-3 order-lg-2 d-none d-lg-block">
+              <div className="col-12 col-lg-6 d-flex justify-content-start mt-3 order-3 order-lg-2 d-none d-lg-block">
                 <button
                   className="btn btn-lg Demobutton Demoenquirebuttonwidth mt-1"
                   onClick={(e) => handleEnquireClick(e, "enquire-now")}
@@ -1717,24 +1717,24 @@ export default function Home({ handleModalOpen }) {
             </div>
             {/* Image Section */}
             <div
-              className="col-12 col-lg-6  col-xl-4 col-xxl-4
-             mt-2 mt-lg-5  order-1 order-lg-3 text-lg-end"
+              className="col-12 col-lg-6 col-xl-4 col-xxl-6
+             mt-2  order-1 order-lg-3 "
             >
               <img
                 src={KeyTopics}
                 alt="Key Topics Image"
-                className="KeyTopicsImagewidth text-lg-end ms-lg-4 "
+                className="img-fluid "
                 style={{ borderRadius: "3px 30px 3px 30px" }}
               />
             </div>
-            <div className="col-11 mt-2 ms-3 order-3 d-block d-lg-none ">
+            <div className="col-12 mt-2 ms-3 order-3 d-block d-lg-none ">
               <button
                 className="btn btn-lg Demobutton Demoenquirebuttonwidth ms-lg-4"
                 onClick={(e) => handleEnquireClick(e, "enquire-now")}
               >
                 Enquire Now
               </button>
-            </div>
+            </div>  
           </div>
         </div>
 

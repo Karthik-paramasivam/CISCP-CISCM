@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/CISCP-CISCM/static/css/main.bce541e4.css",
+    "main.css": "/CISCP-CISCM/static/css/main.ee79c4ea.css",
     "main.js": "/CISCP-CISCM/static/js/main.d4eae36b.js",
     "static/js/488.7e101b22.chunk.js": "/CISCP-CISCM/static/js/488.7e101b22.chunk.js",
     "static/media/Contactbanner.png": "/CISCP-CISCM/static/media/Contactbanner.9586aca82b13ff16a360.png",
@@ -23,12 +23,12 @@
     "static/media/slick.woff": "/CISCP-CISCM/static/media/slick.295183786cd8a1389865.woff",
     "static/media/Contactsvg.svg": "/CISCP-CISCM/static/media/Contactsvg.15e14b7072527e1d38f3fedc3870d4a8.svg",
     "index.html": "/CISCP-CISCM/index.html",
-    "main.bce541e4.css.map": "/CISCP-CISCM/static/css/main.bce541e4.css.map",
+    "main.ee79c4ea.css.map": "/CISCP-CISCM/static/css/main.ee79c4ea.css.map",
     "main.d4eae36b.js.map": "/CISCP-CISCM/static/js/main.d4eae36b.js.map",
     "488.7e101b22.chunk.js.map": "/CISCP-CISCM/static/js/488.7e101b22.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bce541e4.css",
+    "static/css/main.ee79c4ea.css",
     "static/js/main.d4eae36b.js"
   ]
 }

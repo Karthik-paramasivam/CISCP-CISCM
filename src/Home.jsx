@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import BackgroundImage from "./Images/CISCP-CISCMSBackground.jpg";
+import BackgroundImage from "./Images/CISCP-CISCMSBackground.jpeg";
 import { Button, Form, Input, Select, message, Space } from "antd";
 import { motion } from "framer-motion"; // Import framer-motion for animations
 import "./App.css";

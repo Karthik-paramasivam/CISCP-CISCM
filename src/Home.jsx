@@ -1175,7 +1175,7 @@ export default function Home({ handleModalOpen }) {
               </div>
             </div>
 
-            <div className="col-12 col-lg-6 col-xl-4 col-xxl-4 mt-3 order-1 order-lg-1 border border-white text-center">
+            <div className="col-12 col-lg-6 col-xl-4 col-xxl-4 mt-3 order-1 order-lg-1 border border-white ">
               <img
                 src={CISCP}
                 alt="CISCP Image"
@@ -1242,7 +1242,7 @@ export default function Home({ handleModalOpen }) {
               </div>
             </div>
             {/* Image Section */}
-            <div className="col-12 col-lg-4 col-xl-4 col-xxl-4  mt-2  order-1 order-lg-3 border border-white">
+            <div className="col-12 col-lg-4 col-xl-4 col-xxl-4  mt-2  order-1 order-lg-3 border border-white ">
               <img
                 src={CISCM}
                 alt="CISCM Image"

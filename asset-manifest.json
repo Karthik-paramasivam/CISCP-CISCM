@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/CISCP-CISCM/static/css/main.bce541e4.css",
-    "main.js": "/CISCP-CISCM/static/js/main.5d5c73bd.js",
+    "main.js": "/CISCP-CISCM/static/js/main.d4eae36b.js",
     "static/js/488.7e101b22.chunk.js": "/CISCP-CISCM/static/js/488.7e101b22.chunk.js",
-    "static/media/CISCP-CISCMSBackground.jpg": "/CISCP-CISCM/static/media/CISCP-CISCMSBackground.8ca8bda39341ee814c09.jpg",
     "static/media/Contactbanner.png": "/CISCP-CISCM/static/media/Contactbanner.9586aca82b13ff16a360.png",
     "static/media/KeyTopics.jpg": "/CISCP-CISCM/static/media/KeyTopics.eb29aa9f66dfcfec65d9.jpg",
+    "static/media/CISCP-CISCMSBackground.jpeg": "/CISCP-CISCM/static/media/CISCP-CISCMSBackground.8ba37edf41849f01f8e0.jpeg",
     "static/media/CISCMCourse.jpeg": "/CISCP-CISCM/static/media/CISCMCourse.fd3310ef6a4236ea3db9.jpeg",
     "static/media/CISCPCourse.jpeg": "/CISCP-CISCM/static/media/CISCPCourse.2bae3d974b6bef305327.jpeg",
     "static/media/CareerOppurtunities.jpeg": "/CISCP-CISCM/static/media/CareerOppurtunities.6ff6908e2fd24b41d5b4.jpeg",
@@ -24,11 +24,11 @@
     "static/media/Contactsvg.svg": "/CISCP-CISCM/static/media/Contactsvg.15e14b7072527e1d38f3fedc3870d4a8.svg",
     "index.html": "/CISCP-CISCM/index.html",
     "main.bce541e4.css.map": "/CISCP-CISCM/static/css/main.bce541e4.css.map",
-    "main.5d5c73bd.js.map": "/CISCP-CISCM/static/js/main.5d5c73bd.js.map",
+    "main.d4eae36b.js.map": "/CISCP-CISCM/static/js/main.d4eae36b.js.map",
     "488.7e101b22.chunk.js.map": "/CISCP-CISCM/static/js/488.7e101b22.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bce541e4.css",
-    "static/js/main.5d5c73bd.js"
+    "static/js/main.d4eae36b.js"
   ]
 }

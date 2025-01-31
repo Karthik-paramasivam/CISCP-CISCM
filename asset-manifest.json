@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/CISCP-CISCM/static/css/main.5da27cd6.css",
-    "main.js": "/CISCP-CISCM/static/js/main.809bd4de.js",
+    "main.css": "/CISCP-CISCM/static/css/main.1e6399ea.css",
+    "main.js": "/CISCP-CISCM/static/js/main.8d1a1021.js",
     "static/js/488.7e101b22.chunk.js": "/CISCP-CISCM/static/js/488.7e101b22.chunk.js",
+    "static/media/CourseDescription.png": "/CISCP-CISCM/static/media/CourseDescription.d734dc38156172f89a6b.png",
     "static/media/Contactbanner.png": "/CISCP-CISCM/static/media/Contactbanner.9586aca82b13ff16a360.png",
     "static/media/KeyTopics.jpg": "/CISCP-CISCM/static/media/KeyTopics.eb29aa9f66dfcfec65d9.jpg",
     "static/media/CISCP-CISCMSBackground.jpeg": "/CISCP-CISCM/static/media/CISCP-CISCMSBackground.8ba37edf41849f01f8e0.jpeg",
@@ -13,8 +14,9 @@
     "static/media/CISCP.jpg": "/CISCP-CISCM/static/media/CISCP.0701eebd800ddc481ebc.jpg",
     "static/media/ElevateImage.png": "/CISCP-CISCM/static/media/ElevateImage.7472c0f2af99668800d9.png",
     "static/media/KHDA.png": "/CISCP-CISCM/static/media/KHDA.b90c57163600f59e01bd.png",
-    "static/media/ISOCertified.png": "/CISCP-CISCM/static/media/ISOCertified.919bc58acfc76c867762.png",
-    "static/media/IFPSMLogo.jpg": "/CISCP-CISCM/static/media/IFPSMLogo.f50a11bdba8e15d47ef7.jpg",
+    "static/media/IFPSM.png": "/CISCP-CISCM/static/media/IFPSM.3602a4d0e08112dc8e65.png",
+    "static/media/IFPSMLogos.jpg": "/CISCP-CISCM/static/media/IFPSMLogos.f50a11bdba8e15d47ef7.jpg",
+    "static/media/ISOCertified.png": "/CISCP-CISCM/static/media/ISOCertified.40c5867b573d5ac0f89f.png",
     "static/media/WingsWay logo.png": "/CISCP-CISCM/static/media/WingsWay logo.2d38dac4d59df4056f8d.png",
     "static/media/Footerlogo.png": "/CISCP-CISCM/static/media/Footerlogo.095b840dc5c1b28b4e8b.png",
     "static/media/slick.svg": "/CISCP-CISCM/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -23,12 +25,12 @@
     "static/media/slick.woff": "/CISCP-CISCM/static/media/slick.295183786cd8a1389865.woff",
     "static/media/Contactsvg.svg": "/CISCP-CISCM/static/media/Contactsvg.15e14b7072527e1d38f3fedc3870d4a8.svg",
     "index.html": "/CISCP-CISCM/index.html",
-    "main.5da27cd6.css.map": "/CISCP-CISCM/static/css/main.5da27cd6.css.map",
-    "main.809bd4de.js.map": "/CISCP-CISCM/static/js/main.809bd4de.js.map",
+    "main.1e6399ea.css.map": "/CISCP-CISCM/static/css/main.1e6399ea.css.map",
+    "main.8d1a1021.js.map": "/CISCP-CISCM/static/js/main.8d1a1021.js.map",
     "488.7e101b22.chunk.js.map": "/CISCP-CISCM/static/js/488.7e101b22.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5da27cd6.css",
-    "static/js/main.809bd4de.js"
+    "static/css/main.1e6399ea.css",
+    "static/js/main.8d1a1021.js"
   ]
 }

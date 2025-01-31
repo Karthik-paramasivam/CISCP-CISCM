@@ -20,11 +20,14 @@ import CareerOppurtunities from "./Images/CareerOppurtunities.jpeg";
 import "./App.css";
 import ISO from "./Images/ISOCertified.png";
 import KHDA from "./Images/KHDA.png";
-import IFPSMLogo from "./Images/IFPSMLogo.jpg";
+import IFPSMLogo from "./Images/IFPSMLogos.jpg";
 import contactsvg from "./Images/Contactsvg.svg";
 import Contactbanner from "./Images/Contactbanner.png";
 import CISCM from "./Images/CISCM.jpg";
 import CISCP from "./Images/CISCP.jpg";
+import IFPSM from "./Images/IFPSM.png";
+import CourseDescription from "./Images/CourseDescription.png";
+
 
 export default function Home({ handleModalOpen }) {
   const [form] = Form.useForm(); // useForm hook for handling form operations
@@ -687,13 +690,19 @@ export default function Home({ handleModalOpen }) {
                   animate={{ opacity: 1 }}
                   transition={{ duration: 1.5 }}
                 >
+                    <img
+                    src={IFPSMLogo}
+                    alt="IFPSM Image"
+                    className="img-fluid mt-3 mt-lg-0 IFPSMLogoWidth"
+                  />
                   <h1
-                    className="text-white mt-3 mt-md-3 ms-3 heroheading"
+                    className="text-white mt-2 mt-md-0 mt-xxl-0 heroheading"
                     // style={{ fontSize: "60px", fontWeight: "700" }}
                   >
-                    Future-Proof Your Career in Supply Chain Management{" "}
+                    Future-Proof Your Career in 
+                    <span style={{color:"#b0a18b"}}> Supply Chain Management</span>{" "}
                   </h1>
-                  <p className="text-white herotext ms-3">
+                  <p className="text-white herotext ">
                     Secure your supply chain career with this dual
                     certification!
                   </p>
@@ -716,7 +725,7 @@ export default function Home({ handleModalOpen }) {
                     className="rounded-5"
                     layout="vertical"
                     onFinish={handleSubmit}
-                    style={{ backgroundColor: "#0971CE", padding: "20px" }}
+                    style={{ padding: "20px" }}
                   >
                     {/* Form Fields */}
                     <Form.Item
@@ -803,7 +812,7 @@ export default function Home({ handleModalOpen }) {
                     </Form.Item>
 
                     <Form.Item>
-                      <div className="d-flex justify-content-end">
+                      <div className="d-flex justify-content-center">
                         <Button
                           type="default"
                           htmlType="submit"
@@ -839,51 +848,83 @@ export default function Home({ handleModalOpen }) {
             </div>
           </div>
           <div
-            className={`row   d-flex align-items-center mt-2 p-3 p-md-5 pt-lg-5 pb-lg-5 ps-lg-3 pe-lg-3 p-xl-5 p-xxl-5 justify-content-center WhyChoose-container custom-background slide-in-left   ${
+            className={`row d-flex align-items-start mt-2 p-xxl-5 justify-content-center WhyChoose-container custom-background slide-in-left ${
               hasViewedSlide.zeroElement ? "animate-slide-in" : ""
             }`}
-            style={{
-              borderRadius: "10px",
-            }}
+            style={{ borderRadius: "10px" }}
             ref={myRef0}
           >
-            <div className="col-12 ">
+            <div className="col-12">
               <h2 className="text-center mt-1 RecognitionsHeading">
                 Recognitions and Qualifications
               </h2>
             </div>
-            <div className="col-12 col-lg-4 mt-5 mt-lg-5 mt-xl-4 mt-xxl-5 recognitionsBorder">
-              <div className="text-center mt-xxl-3">
-                {" "}
+
+            {/* IATA Logo Section */}
+            <div className="col-12 col-lg-4 mt-3 recognitionsBorder d-flex flex-column justify-content-start align-items-center text-center">
+              <div
+                className="d-flex justify-content-center align-items-center"
+                style={{ height: "120px" }}
+              >
                 <img
-                  src={IFPSMLogo}
+                 src={IFPSM}
                   alt="IFPSM Image"
-                  style={{ width: "50%" }}
+                  className="img-fluid"
+                  style={{
+                    width: "200px",
+                    objectFit: "contain",
+                  }}
                 />
               </div>
-
-              <p className="mt-3 text-center">
-                Both courses are accredited by the International Federation of
+              <p className="text-center mt-3">
+              Both courses are accredited by the International Federation of
                 Purchasing and Supply Management, ensuring international
                 standards of excellence.
               </p>
             </div>
 
-            <div className="col-12 col-lg-4 mt-5 mt-xl-5  mt-xxl-4 recognitionsBorder">
-              <div className="text-center">
-                <img src={KHDA} alt="KHDA Image" className="img-fluid w-25 " />
+            {/* KHDA Logo Section */}
+            <div className="col-12 col-lg-4 mt-3 recognitionsBorder d-flex flex-column justify-content-start align-items-center text-center">
+              <div
+                className="d-flex justify-content-center align-items-center"
+                style={{ height: "120px" }}
+              >
+                <img
+                  src={KHDA}
+                  alt="KHDA Logo"
+                  className="img-fluid"
+                  style={{
+                    width: "160px",
+                    objectFit: "contain",
+                  }}
+                />
               </div>
-              <p className="mt-3 mt-md-0 mt-lg-3 mt-xl-3 mt-xxl-2 text-center">
-                Our dedication to high-quality education is recognised by the
-                Knowledge and Human Development Authority.
+              <p className="text-center mt-3">
+              Our dedication to high-quality education is recognised by the Knowledge and Human Development Authority.
+
+
               </p>
             </div>
-            <div className="col-12 col-lg-4 mt-5 mt-md-5 mt-lg-1 mt-xl-3 mt-xxl-0 ">
-              <div className="text-center">
-                <img src={ISO} alt="ISO Image" className="img-fluid w-25 " />
+
+            {/* ISO Logo Section */}
+            <div className="col-12 col-lg-4 mt-3 d-flex flex-column justify-content-start align-items-center text-center">
+              <div
+                className="d-flex justify-content-center align-items-center"
+                style={{ height: "120px" }}
+              >
+                <img
+                  src={ISO}
+                  alt="ISO Logo"
+                  className="img-fluid"
+                  style={{
+                    width: "190px",
+                    objectFit: "contain",
+                  }}
+                />
               </div>
-              <p className="mt-3 text-center">
-                We are committed to quality management and continuous
+              <p className="text-center mt-3">
+                We are certified by the International Accreditation Forum (IAF)
+                for our commitment to quality management and continuous
                 improvement.
               </p>
             </div>
@@ -996,10 +1037,9 @@ export default function Home({ handleModalOpen }) {
                     style={{ fontSize: "18px", fontWeight: "400" }}
                   >
                     {" "}
-                    <span className="fw-bold">Global Reach: </span>
+                    <span className="fw-bold">Diverse Student Base: </span>
                     <span>
-                      Join our diverse community of students from over 80+
-                      nationalities.
+                    Be a part of a growing community of students and professionals from over 80+ nationalities.
                     </span>
                   </p>
                 </div>
@@ -1014,7 +1054,7 @@ export default function Home({ handleModalOpen }) {
         >
           <div className="row border aboutdivwidth border-white m-auto">
             <div className="col-12 ">
-              <div className="row">
+              <div className="row d-flex align-items-center justify-content-center">
                 <motion.div
                   ref={ref}
                   className="col-12 col-lg-6 "
@@ -1102,9 +1142,10 @@ export default function Home({ handleModalOpen }) {
                   }}
                 >
                   <img
-                    src={IFPSMLogo}
-                    alt="IFPSM Image"
-                    className="img-fluid  mt-lg-0 border border-white hover-scale text-center"
+                    src={CourseDescription}
+                    alt="Course Description Image"
+                    className="img-fluid  mt-lg-0 border border-white text-center"
+                    style={{ borderRadius: "3px 30px 3px 30px" }}
                   />
                 </motion.div>
               </div>
@@ -1137,37 +1178,42 @@ export default function Home({ handleModalOpen }) {
             {/* Content Section */}
             <div className="col-12 col-lg-6 order-2 order-lg-2">
               <h2
-                className="text-start ms-lg-4 mt-2 Aboutsubheading"
+                className="text-start ms-lg-1 mt-2 Aboutsubheading"
                 style={{ color: "#011689" }}
               >
                 CISCP
               </h2>
               <ul style={{ listStyleType: "none", paddingLeft: 0 }}>
-                <li className="ms-lg-4 d-flex align-items-start mt-1">
+                <li className="ms-lg-1 d-flex align-items-start mt-1">
                   <FontAwesomeIcon
                     icon={faCircleCheck}
                     className="me-2 flex-shrink-0 mt-1 ms-1"
                     style={{ color: "#011689" }}
                   />
-                  Learn the fundamentals of supply chain management, from
-                  logistics to procurement and advanced negotiation strategies.
+                 Learn the fundamentals of supply chain management, from procurement processes, and logistics management, to advanced negotiation strategies.
                 </li>
-                <li className="ms-lg-4 d-flex align-items-start mt-1">
+                <li className="ms-lg-1 d-flex align-items-start mt-1">
                   <FontAwesomeIcon
                     icon={faCircleCheck}
                     className="me-2 flex-shrink-0 mt-1 ms-1"
                     style={{ color: "#011689" }}
                   />
-                  Designed for aspiring professionals, this course sets you
-                  apart with exclusive benefits like guaranteed internships,
-                  scholarships, and job assistance.
+                  Gain internationally recognised certification from the IFPSM, that gives you knowledge that meets global industry standards.
+                </li>
+                <li className="ms-lg-1 d-flex align-items-start mt-1">
+                  <FontAwesomeIcon
+                    icon={faCircleCheck}
+                    className="me-2 flex-shrink-0 mt-1 ms-1"
+                    style={{ color: "#011689" }}
+                  />
+                Set yourself apart with exclusive benefits like guaranteed internships, scholarships, and job assistance for aspiring professionals.
                 </li>
               </ul>
 
               {/* Button for Large Devices */}
               <div className="mt-3 d-none d-lg-block ms-2">
                 <button
-                  className="btn btn-lg EnquireButton Enquirebuttonwidth ms-lg-4 mt-1"
+                  className="btn btn-lg EnquireButton Enquirebuttonwidth ms-lg-1 mt-1"
                   onClick={(e) => handleEnquireClick(e, "enquire-now")}
                 >
                   Enquire Now
@@ -1207,7 +1253,7 @@ export default function Home({ handleModalOpen }) {
             <div className="col-12 col-lg-6 order-2 order-lg-1 mt-3 border border-white">
               <h1
                 className="text-start Aboutsubheading"
-                style={{ color: "#0971CE" }}
+                style={{ color: "#011689" }}
               >
                 CISCM
               </h1>
@@ -1217,7 +1263,7 @@ export default function Home({ handleModalOpen }) {
                   <FontAwesomeIcon
                     icon={faCircleCheck}
                     className="me-2 flex-shrink-0 mt-1 ms-1"
-                    style={{ color: "#0971CE" }}
+                    style={{ color: "#011689" }}
                   />
                   Elevate your expertise with this advanced-level certification.
                 </li>
@@ -1225,16 +1271,30 @@ export default function Home({ handleModalOpen }) {
                   <FontAwesomeIcon
                     icon={faCircleCheck}
                     className="me-2 flex-shrink-0 mt-1 ms-1"
-                    style={{ color: "#0971CE" }}
+                    style={{ color: "#011689" }}
                   />
-                  Covering logistics management, risk management, and emerging
-                  technologies, this course prepares you for senior roles in the
-                  industry.
+                  Understand the strategic aspects of supply chain management for senior roles, covering topics such as logistics management, risk management, and emerging technologies.
+                </li>
+                <li className="d-flex align-items-start mt-1">
+                  <FontAwesomeIcon
+                    icon={faCircleCheck}
+                    className="me-2 flex-shrink-0 mt-1 ms-1"
+                    style={{ color: "#011689" }}
+                  />
+                  Prepare for management and leadership positions in your current or ideal company.
+                </li>
+                <li className="d-flex align-items-start mt-1">
+                  <FontAwesomeIcon
+                    icon={faCircleCheck}
+                    className="me-2 flex-shrink-0 mt-1 ms-1"
+                    style={{ color: "#011689" }}
+                  />
+                 Aligns with IFPSM standards, ensuring globally relevant knowledge and recognition.
                 </li>
               </ul>
               <div className="col-12 col-lg-6 d-flex justify-content-start mt-3 order-3 order-lg-2 d-none d-lg-block ms-2">
                 <button
-                  className="btn btn-lg Demobutton Demoenquirebuttonwidth  mt-1"
+                  className="btn btn-lg EnquireButton Demoenquirebuttonwidth  mt-1"
                   onClick={(e) => handleEnquireClick(e, "enquire-now")}
                 >
                   Enquire Now
@@ -1252,7 +1312,7 @@ export default function Home({ handleModalOpen }) {
             </div>
             <div className="col-11 mt-2 order-3 d-block d-lg-none ms-3">
               <button
-                className="btn btn-lg Demobutton Demoenquirebuttonwidth  ms-lg-4"
+                className="btn btn-lg EnquireButton Demoenquirebuttonwidth  ms-lg-4"
                 onClick={(e) => handleEnquireClick(e, "enquire-now")}
               >
                 Enquire Now
@@ -1411,7 +1471,7 @@ export default function Home({ handleModalOpen }) {
             <div className="col-12 col-lg-6 order-2 order-lg-1 mt-3 ">
               <h1
                 className="text-start Aboutsubheading"
-                style={{ color: "#0971CE" }}
+                style={{ color: "#011689" }}
               >
                 CISCM
               </h1>
@@ -1421,7 +1481,7 @@ export default function Home({ handleModalOpen }) {
                   <FontAwesomeIcon
                     icon={faCircleCheck}
                     className="me-2 flex-shrink-0 mt-1 ms-1"
-                    style={{ color: "#0971CE" }}
+                    style={{ color: "#011689" }}
                   />
                   Role of Supply Chain in Business
                 </li>
@@ -1429,7 +1489,7 @@ export default function Home({ handleModalOpen }) {
                   <FontAwesomeIcon
                     icon={faCircleCheck}
                     className="me-2 flex-shrink-0 mt-1 ms-1"
-                    style={{ color: "#0971CE" }}
+                    style={{ color: "#011689" }}
                   />
                   Logistics Management
                 </li>
@@ -1437,7 +1497,7 @@ export default function Home({ handleModalOpen }) {
                   <FontAwesomeIcon
                     icon={faCircleCheck}
                     className="me-2 flex-shrink-0 mt-1 ms-1"
-                    style={{ color: "#0971CE" }}
+                    style={{ color: "#011689" }}
                   />
                   Inventory Management
                 </li>
@@ -1445,7 +1505,7 @@ export default function Home({ handleModalOpen }) {
                   <FontAwesomeIcon
                     icon={faCircleCheck}
                     className="me-2 flex-shrink-0 mt-1 ms-1"
-                    style={{ color: "#0971CE" }}
+                    style={{ color: "#011689" }}
                   />
                   Supplier Management
                 </li>
@@ -1453,7 +1513,7 @@ export default function Home({ handleModalOpen }) {
                   <FontAwesomeIcon
                     icon={faCircleCheck}
                     className="me-2 flex-shrink-0 mt-1 ms-1"
-                    style={{ color: "#0971CE" }}
+                    style={{ color: "#011689" }}
                   />
                   Sustainability in Supply Chain
                 </li>
@@ -1461,7 +1521,7 @@ export default function Home({ handleModalOpen }) {
                   <FontAwesomeIcon
                     icon={faCircleCheck}
                     className="me-2 flex-shrink-0 mt-1 ms-1"
-                    style={{ color: "#0971CE" }}
+                    style={{ color: "#011689" }}
                   />
                   Supply Chain Excellence
                 </li>
@@ -1469,7 +1529,7 @@ export default function Home({ handleModalOpen }) {
                   <FontAwesomeIcon
                     icon={faCircleCheck}
                     className="me-2 flex-shrink-0 mt-1 ms-1"
-                    style={{ color: "#0971CE" }}
+                    style={{ color: "#011689" }}
                   />
                   Collaboration in Supply Chain
                 </li>
@@ -1477,7 +1537,7 @@ export default function Home({ handleModalOpen }) {
                   <FontAwesomeIcon
                     icon={faCircleCheck}
                     className="me-2 flex-shrink-0 mt-1 ms-1"
-                    style={{ color: "#0971CE" }}
+                    style={{ color: "#011689" }}
                   />
                   Risk Management
                 </li>
@@ -1485,14 +1545,14 @@ export default function Home({ handleModalOpen }) {
                   <FontAwesomeIcon
                     icon={faCircleCheck}
                     className="me-2 flex-shrink-0 mt-1 ms-1"
-                    style={{ color: "#0971CE" }}
+                    style={{ color: "#011689" }}
                   />
                   Emerging Technologies in Supply Chain{" "}
                 </li>
               </ul>
               <div className="col-12 col-lg-6 d-flex justify-content-start mt-3 order-3 order-lg-2 d-none d-lg-block ms-2">
                 <button
-                  className="btn btn-lg Demobutton Demoenquirebuttonwidth  mt-1 "
+                  className="btn btn-lg EnquireButton Demoenquirebuttonwidth  mt-1 "
                   onClick={(e) => handleEnquireClick(e, "enquire-now")}
                 >
                   Enquire Now
@@ -1510,7 +1570,7 @@ export default function Home({ handleModalOpen }) {
             </div>
             <div className="col-12 mt-2 order-3 d-block d-lg-none ms-3">
               <button
-                className="btn btn-lg Demobutton Demoenquirebuttonwidth  ms-lg-4"
+                className="btn btn-lg EnquireButton Demoenquirebuttonwidth  ms-lg-4"
                 onClick={(e) => handleEnquireClick(e, "enquire-now")}
               >
                 Enquire Now
@@ -1643,7 +1703,7 @@ export default function Home({ handleModalOpen }) {
             <div className="col-12 col-lg-6  order-2 order-lg-1">
               <h1
                 className="text-start Aboutsubheading mt-3"
-                style={{ color: "#0971CE" }}
+                style={{ color: "#011689" }}
               >
                 Key Topics Covered{" "}
               </h1>
@@ -1653,7 +1713,7 @@ export default function Home({ handleModalOpen }) {
                   <FontAwesomeIcon
                     icon={faCircleCheck}
                     className="me-2 flex-shrink-0 mt-1 ms-1"
-                    style={{ color: "#0971CE" }}
+                    style={{ color: "#011689" }}
                   />
                   Basics of Supply Chain & Logistics
                 </li>
@@ -1661,7 +1721,7 @@ export default function Home({ handleModalOpen }) {
                   <FontAwesomeIcon
                     icon={faCircleCheck}
                     className="me-2 flex-shrink-0 mt-1 ms-1"
-                    style={{ color: "#0971CE" }}
+                    style={{ color: "#011689" }}
                   />
                   Inventory and Material Management
                 </li>
@@ -1669,7 +1729,7 @@ export default function Home({ handleModalOpen }) {
                   <FontAwesomeIcon
                     icon={faCircleCheck}
                     className="me-2 flex-shrink-0 mt-1 ms-1"
-                    style={{ color: "#0971CE" }}
+                    style={{ color: "#011689" }}
                   />
                   International Sourcing and Procurement
                 </li>
@@ -1677,7 +1737,7 @@ export default function Home({ handleModalOpen }) {
                   <FontAwesomeIcon
                     icon={faCircleCheck}
                     className="me-2 flex-shrink-0 mt-1 ms-1"
-                    style={{ color: "#0971CE" }}
+                    style={{ color: "#011689" }}
                   />
                   Effective Negotiation Strategies
                 </li>
@@ -1685,7 +1745,7 @@ export default function Home({ handleModalOpen }) {
                   <FontAwesomeIcon
                     icon={faCircleCheck}
                     className="me-2 flex-shrink-0 mt-1 ms-1"
-                    style={{ color: "#0971CE" }}
+                    style={{ color: "#011689" }}
                   />
                   Supplier and Risk Management
                 </li>
@@ -1693,7 +1753,7 @@ export default function Home({ handleModalOpen }) {
                   <FontAwesomeIcon
                     icon={faCircleCheck}
                     className="me-2 flex-shrink-0 mt-1 ms-1"
-                    style={{ color: "#0971CE" }}
+                    style={{ color: "#011689" }}
                   />
                   Sustainability in Supply Chain
                 </li>
@@ -1701,14 +1761,14 @@ export default function Home({ handleModalOpen }) {
                   <FontAwesomeIcon
                     icon={faCircleCheck}
                     className="me-2 flex-shrink-0 mt-1 ms-1"
-                    style={{ color: "#0971CE" }}
+                    style={{ color: "#011689" }}
                   />
                   Emerging Technologies in Supply Chain
                 </li>
               </ul>
               <div className="col-12 col-lg-6 d-flex justify-content-start mt-3 order-3 order-lg-2 d-none d-lg-block">
                 <button
-                  className="btn btn-lg Demobutton Demoenquirebuttonwidth mt-1"
+                  className="btn btn-lg EnquireButton Demoenquirebuttonwidth mt-1"
                   onClick={(e) => handleEnquireClick(e, "enquire-now")}
                 >
                   Enquire Now
@@ -1729,7 +1789,7 @@ export default function Home({ handleModalOpen }) {
             </div>
             <div className="col-12 mt-2 ms-3 order-3 d-block d-lg-none ">
               <button
-                className="btn btn-lg Demobutton Demoenquirebuttonwidth ms-lg-4"
+                className="btn btn-lg EnquireButton Demoenquirebuttonwidth ms-lg-4"
                 onClick={(e) => handleEnquireClick(e, "enquire-now")}
               >
                 Enquire Now
@@ -1788,8 +1848,7 @@ export default function Home({ handleModalOpen }) {
                 className="Testimonialmainheading"
                 style={{ color: "#011689" }}
               >
-                Testimonials
-              </h1>
+Hear From our Happy Students              </h1>
             </div>
           </div>
 
@@ -1968,10 +2027,10 @@ export default function Home({ handleModalOpen }) {
                 className="footer-link footerlinktext"
                 onClick={(e) => handleFooterLinkClick(e, "Testimonials")}
               >
-                <span>Testimonial</span>
+                <span>Testimonials</span>
               </a>
             </div>
-            <div
+            <div  
               className="row "
               style={{ backgroundColor: "black", color: "white" }}
             >

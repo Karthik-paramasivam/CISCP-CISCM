@@ -1,5 +1,5 @@
 {
-  "homepage": "https://Karthik-paramasivam.github.io/CISCP-CISCM",
+  "homepage": "https://stratifytechno.com/wti/landing/ciscp-ciscm-training-courses",
   "name": "mytask",
   "version": "0.1.0",
   "private": true,
@@ -24,8 +24,7 @@
     "web-vitals": "^4.2.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+   
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

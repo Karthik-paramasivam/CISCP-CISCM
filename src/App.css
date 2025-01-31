@@ -172,13 +172,13 @@ button.Demobutton:hover {
   border: 2px solid #f46a2f !important;
 }
 
-button.Submitbutton:hover {
+/* button.Submitbutton:hover {
   border: 2px solid #011689 !important;
   color: white !important;
   background-color: #011689  !important;
   border: 2px solid #011689  !important;
 
-}
+} */
 .fixed-icon {
   position: fixed;
   bottom: 20px;  /* Adjust this value to position the icon vertically */
@@ -691,18 +691,18 @@ button.EnquireButton:hover {
 }
 
 @media (max-width: 768px) {
-  .dynamic-height {
+  /* .dynamic-height {
     height: 1000px !important;
-  }
+  } */
   .CIPSLevel5Width{
     width: 280px !important;
   }
 }
 
 @media (max-width: 426px) {
-  .dynamic-height {
+  /* .dynamic-height {
     height: 1150px !important;
-  }
+  } */
   .CIPSLevel5Width{
     width: 280px !important;
   }
@@ -766,6 +766,15 @@ button.EnquireButton:hover {
   .KeyTopicsImagewidth{
     width: 500px !important;
   }
+  .EnquireButton.Demoenquirebuttonwidth {
+    width: 60% !important;
+  }
+  .dynamic-height {
+    height: 750px !important;
+  }
+  .IFPSMLogoWidth{
+    width: 70% !important;
+  }
 }
 
 
@@ -792,6 +801,12 @@ button.EnquireButton:hover {
   }
   .KeyTopicsImagewidth{
     width: 500px !important;
+  }
+  .dynamic-height {
+    height: 700px !important;
+  }
+  .IFPSMLogoWidth{
+    width: 70% !important;
   }
 }
 
@@ -820,6 +835,16 @@ button.EnquireButton:hover {
   .KeyTopicsImagewidth{
     width: 400px !important;
   }
+  .EnquireButton.Demoenquirebuttonwidth {
+    width: 100% !important;
+  }
+  
+  .dynamic-height {
+    height: 700px !important;
+  }
+  .IFPSMLogoWidth{
+    width: 80% !important;
+  }
 }
 
 @media (max-width: 768px) {
@@ -844,6 +869,16 @@ button.EnquireButton:hover {
   }
   .KeyTopicsImagewidth{
     width: 500px !important;
+  }
+  .EnquireButton.Demoenquirebuttonwidth {
+    width: 40% !important;
+  }
+
+  .dynamic-height {
+    height: 1100px !important;
+  }
+  .IFPSMLogoWidth{
+    width: 60% !important;
   }
 }
 
@@ -874,6 +909,15 @@ button.EnquireButton:hover {
   .KeyTopicsImagewidth{
     width: 370px !important;
   }
+  .EnquireButton.Demoenquirebuttonwidth {
+    width: 60% !important;
+  }
+  .dynamic-height {
+    height: 1200px !important;
+  }
+  .IFPSMLogoWidth{
+    width: 80% !important;
+  }
 }
 
 
@@ -900,6 +944,15 @@ button.EnquireButton:hover {
   }
   .KeyTopicsImagewidth{
     width: 330px !important;
+  }
+  .EnquireButton.Demoenquirebuttonwidth {
+    width: 60% !important;
+  }
+  .dynamic-height {
+    height: 1200px !important;
+  }
+  .IFPSMLogoWidth{
+    width: 100% !important;
   }
 }
 
@@ -930,10 +983,34 @@ button.EnquireButton:hover {
   .KeyTopicsImagewidth{
     width: 270px !important;
   }
+  .EnquireButton.Demoenquirebuttonwidth {
+    width: 60% !important;
+  }
+
+  .dynamic-height {
+    height: 1200px !important;
+  }
+  .IFPSMLogoWidth{
+    width: 100% !important;
+  }
 }
 
 .Coursediscriptionpara  {
   display: flex;
   flex-wrap: wrap;
   align-items: start;
+}
+
+
+.EnquireButton {
+  background-color: #011689  !important;
+  color: white!important;
+  border: 2px solid #011689 !important;
+}
+
+button.EnquireButton:hover {
+  color: #0971CE !important;
+  background-color: white !important;
+  border: 2px solid #0971CE !important;
+
 }
